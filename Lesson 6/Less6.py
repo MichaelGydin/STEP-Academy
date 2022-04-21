@@ -1,6 +1,5 @@
 import random
 class Hero:
-    amount_students = 0
     def __init__(self, name, age, race,):
         self.name = name
         self.health = 100
