@@ -40,5 +40,4 @@ try:
 
 except:
     print("Houston, type of all text is correct!")
-    i
     
