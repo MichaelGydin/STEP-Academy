@@ -1,0 +1,32 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background: #808080;
+}
+
+.itemMenu{
+    display: flex;
+    padding: 1em 0;
+}
+
+.itemMenu img{
+    width: 100px;
+}
+
+.itemMenu label{
+    padding-left: 2em;
+    padding-top: 2em;
+    color: white;
+    font-size: 1.4em;
+    font-family: sans-serif;
+}
+
+.itemMenu:hover{
+    background: #5e5e5e;
+}
+
+hr{
+    width: 100%;
+    border-color: #5e5e5e;
+}

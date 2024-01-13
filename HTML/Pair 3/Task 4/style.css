@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #2a4f6e;
+    font-family: sans-serif;
+    color: white;
+}
+.flex-conteiner{
+    display: flex;
+    padding-top: 4em;
+    padding-bottom: 3em;
+    
+}
+.flex-conteiner>div{
+    flex: 1;
+}
+.column div{
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    margin-left: 8em;
+    
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.images>div, .images>div:hover{
+    width: 64px;
+    height: 64px;
+}
+.image1{
+    background-image: url(icons/fb_gray.png);
+}
+.image1:hover{
+    background-image: url(icons/fb.png);
+}
+.image2{
+    background-image: url(icons/insta_gray.png);
+}
+.image2:hover{
+    background-image: url(icons/insta.png);
+}
+.image3{
+    background-image: url(icons/youtube_gray.png);
+}
+.image3:hover{
+    background-image: url(icons/youtube.png);
+}
+
+
+.bottomFooter{
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+div>h4:hover{
+    text-decoration: underline;
+}
+
+div>image:hover{
+    background-image: url(icons/fb.png);
+}
