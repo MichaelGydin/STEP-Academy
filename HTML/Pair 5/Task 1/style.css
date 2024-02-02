@@ -1,0 +1,117 @@
+body {
+    font-family: Helvetica;
+}
+
+.table {
+    width: 600px;
+    height: 800px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 10px;
+}
+
+.row:nth-child(odd) {
+    background: #9994;
+    
+}
+
+.row:nth-child(even) {
+    background: #ccc4;
+}
+
+.header {
+    color: #fff;
+    display: flex;
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.header p {
+    margin: 0;
+}
+
+.header .price {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.header .period {
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+.header .cell:nth-child(1) {
+    background: rgb(120, 175, 135);
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 27%;
+    height: 100px;
+}
+
+.header .cell:nth-child(2) {
+    background: rgb(80, 150, 100);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 18%;
+}
+
+.header .cell:nth-child(3) {
+    background: rgb(50, 120, 75);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 18%;
+}
+
+.header .cell:nth-child(4) {
+    background: rgb(25, 100, 50);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 18%;
+}
+
+.header .cell:nth-child(5) {
+    background: rgb(10, 75, 25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 19%;
+}
+
+.cell {
+    text-align: center;
+    vertical-align: middle;
+    flex: 1;
+    padding: 10px;
+}
+
+.button {
+    border-radius: 0;
+    border: 1px solid #4448;
+}
