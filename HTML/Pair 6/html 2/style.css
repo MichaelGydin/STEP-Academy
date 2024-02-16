@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.article{
+    flex: 1 0 60%;
+}
+
+.menu{
+    flex: 1 0 40%;
+    background-color: rgb(74, 74, 184);
+    border-radius: 10px;
+    padding: 10px;
+    color: #FFFFFF;
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu-menu{
+    background-color: rgb(102, 102, 184);
+    border-radius: 10px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 800px){
+    .article, .menu {
+        flex: 100%;
+    }
+    .article {
+        order: 1;
+    }
+    .menu {
+        order: 2;
+    }
+}
