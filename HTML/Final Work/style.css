@@ -1,0 +1,162 @@
+@media only screen and (max-width: 800px) {
+    aside {
+        display: none;
+    }
+
+    .project, .about, .contact {
+        width: 350px;
+        height: 60%;
+    }
+
+    section {
+        flex-direction: column;
+        border: none;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b4b4b4;
+}
+
+.container{
+    border: 2px solid #4CAF50;
+    width: 100vw;
+    min-width: 420px;
+    max-width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    flex-basis: 10vh;
+}
+
+main{
+    flex: 11 auto;
+    display: flex;
+    width: 100%;
+    height: 1400px;
+}
+
+aside{
+    background-color: #fff;
+    flex-basis: 20%;
+}
+
+section{
+    background-color: rgb(255, 255, 255);
+    flex: 11 auto;
+    border-left: 2px solid #4CAF50;
+    margin: 0px auto 0px auto;
+}
+
+footer{
+    background-color: limegreen;
+    flex-basis: 5vh;
+}
+
+.project, .about, .contact {
+    width: 60%;
+    height: 350px;
+    border-radius: 15px;
+    border: 2px solid #4CAF50;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.head{
+    border-bottom: 2px solid #4CAF50;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+}
+
+.header{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar{
+    position: sticky;
+    color: #333;
+    background-color: #fff; 
+    top: 0;
+    padding: 20px;
+    padding-top: 0;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+#projects, #about, #contact {
+    margin: 20px;
+    padding: auto;
+}
+
+.form input[type="text"], .form input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    border-top: 2px solid #4CAF50;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    justify-content: center;
+}
+
+.copyright{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.photo{
+    float: left;
+    padding: 0px 20px 0px 0px;
+    margin: auto;
+    border-radius: 5px;
+    height: 250px;
+    display: block;
+}
+
+.about-photo{
+    padding-right: 100px;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background: #4CAF50;
+    border: 0;
+    margin: 5px 0 5px 0;
+}
