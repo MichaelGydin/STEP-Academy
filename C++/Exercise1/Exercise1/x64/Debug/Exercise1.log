@@ -1,6 +1,0 @@
-﻿  Tasks.cpp
-C:\Users\Mykhailo\Desktop\STEP\C++\Pair1\Exercise1\Tasks.cpp(20,15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Mykhailo\Desktop\STEP\C++\Pair1\Exercise1\Tasks.cpp(21,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Mykhailo\Desktop\STEP\C++\Pair1\Exercise1\Tasks.cpp(46,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\Mykhailo\Desktop\STEP\C++\Pair1\Exercise1\Tasks.cpp(47,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  Exercise1.vcxproj -> C:\Users\Mykhailo\Desktop\STEP\C++\Pair1\Exercise1\x64\Debug\Exercise1.exe
