@@ -1,0 +1,13 @@
+﻿  Exercise 7.cpp
+C:\Users\Mykhailo\Desktop\STEP\C++\Pair 4\Exercise 7\Exercise 7.cpp(9,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  C:\Users\Mykhailo\Desktop\STEP\C++\Pair 4\Exercise 7\Exercise 7.cpp(9,14):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\Mykhailo\Desktop\STEP\C++\Pair 4\Exercise 7\Exercise 7.cpp(54,21):
+  	see reference to function template instantiation 'B power<int>(B,int)' being compiled
+          with
+          [
+              B=int
+          ]
+  
+C:\Users\Mykhailo\Desktop\STEP\C++\Pair 4\Exercise 7\Exercise 7.cpp(18,22): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Exercise 7.vcxproj -> C:\Users\Mykhailo\Desktop\STEP\C++\Pair 4\Exercise 7\x64\Debug\Exercise 7.exe
