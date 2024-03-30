@@ -1,0 +1,4 @@
+﻿  Exercise 9.cpp
+C:\Users\Mykhailo\Desktop\STEP\C++\Pair 5\Exercise 9\Exercise 9.cpp(81,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Mykhailo\Desktop\STEP\C++\Pair 5\Exercise 9\Exercise 9.cpp(83,6): warning C4101: 'arr1': unreferenced local variable
+  Exercise 9.vcxproj -> C:\Users\Mykhailo\Desktop\STEP\C++\Pair 5\Exercise 9\x64\Debug\Exercise 9.exe
