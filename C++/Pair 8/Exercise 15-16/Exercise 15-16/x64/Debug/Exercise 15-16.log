@@ -1,0 +1,7 @@
+﻿  Exercise 15-16.cpp
+C:\Users\Mykhailo\Desktop\STEP\C++\Pair 8\Exercise 15-16\Exercise 15-16.cpp(7,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mykhailo\Desktop\STEP\C++\Pair 8\Exercise 15-16\Exercise 15-16.cpp(18,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mykhailo\Desktop\STEP\C++\Pair 8\Exercise 15-16\Exercise 15-16.cpp(30,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mykhailo\Desktop\STEP\C++\Pair 8\Exercise 15-16\Exercise 15-16.cpp(40,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mykhailo\Desktop\STEP\C++\Pair 8\Exercise 15-16\Exercise 15-16.cpp(50,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Exercise 15-16.vcxproj -> C:\Users\Mykhailo\Desktop\STEP\C++\Pair 8\Exercise 15-16\x64\Debug\Exercise 15-16.exe
