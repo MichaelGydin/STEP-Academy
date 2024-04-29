@@ -81,7 +81,7 @@ console.log(name); */
 
 // 1
 // let name = prompt("Введіть своє їм'я: ");
-// alert(`Твоє ім'я ${name}!`)
+// alert(`Привіт ${name}!`)
 
 // 2
 // let age = prompt("Введіть свій вік: ");
