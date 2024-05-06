@@ -1,0 +1,3 @@
+﻿  Exercise 17-18.cpp
+C:\Users\Mykhailo\Desktop\STEP\C++\Pair 9\Exercise 17-18\Exercise 17-18.cpp(77,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Exercise 17-18.vcxproj -> C:\Users\Mykhailo\Desktop\STEP\C++\Pair 9\Exercise 17-18\x64\Debug\Exercise 17-18.exe
