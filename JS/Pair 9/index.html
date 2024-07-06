@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pair 9</title>
+</head>
+<body>
+    <h1 id="city"></h1>
+    <h2 id="country"></h2>
+    <h2 id="temp">Температура</h2>
+    <h2 id="windSpeed">Швидкість вітру</h2>
+    <h2 id="windDir">Напрямок вітру</h2>
+    <h2 id="cloud">Хмарність</h2>
+    <img id="cloudIcon" src="" alt="Cloud Icon">
+
+    <label for="cityField">Місто</label>
+    <input id="cityField" name="cityField">
+    <button onclick="changeCity()">Ok</button>
+
+    <div style="margin: 50px;">
+        <div><button onclick="getDog()">Generate dog image</button></div>
+        <img id="imgDog" src="" alt="">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
