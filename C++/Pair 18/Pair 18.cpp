@@ -1,35 +1,29 @@
-﻿#include <iostream>
+#include <iostream>
+#include <stdexcept>
 
 using namespace std;
 
-template<typename T>
-class PriorityQueue
-{
+template <typename T>
+class PriorityQueue {
 private:
-    struct Node {
-        T data;
+    struct QueueElement {
+        T value;
         int priority;
     };
 
-    Node* data;
-    int size;
+    QueueElement* elements;
     int capacity;
-
-    void resize() {
-        capacity *= 2;
-        Node* newData = new Node[capacity];
-        for (int i = 0; i < size; i++) {
-            newData[i] = data[i];
-        }
-        delete[] data;
-        data = newData;
-    }
+    int size;
 
 public:
-    PriorityQueue(int cap = 10) : size(0), capacity(cap), data(new Node[capacity]) {}
+    PriorityQueue(int initialCapacity = 10) {
+        elements = new QueueElement[initialCapacity];
+        capacity = initialCapacity;
+        size = 0;
+    }
 
     ~PriorityQueue() {
-        delete[] data;
+        delete[] elements;
     }
 
     bool IsEmpty() const {
@@ -37,47 +31,45 @@ public:
     }
 
     bool IsFull() const {
-        return size >= capacity;
+        return size == capacity;
     }
 
     void InsertWithPriority(const T& value, int priority) {
         if (IsFull()) {
-            resize();
+            throw overflow_error("Queue is full");
         }
-        data[size].data = value;
-        data[size].priority = priority;
+
+        int position = size;
+        while (position > 0 && elements[position - 1].priority < priority) {
+            elements[position] = elements[position - 1];
+            position--;
+        }
+
+        elements[position].value = value;
+        elements[position].priority = priority;
         size++;
     }
 
     T PullHighestPriorityElement() {
         if (IsEmpty()) {
-            throw exception("Queue is empty");
+            throw underflow_error("Queue is empty");
         }
-        int highestPriorityIndex = 0;
+
+        T result = elements[0].value;
+
         for (int i = 1; i < size; i++) {
-            if (data[i].priority > data[highestPriorityIndex].priority) {
-                highestPriorityIndex = i;
-            }
+            elements[i - 1] = elements[i];
         }
-        T highestPriorityElement = data[highestPriorityIndex].data;
-        for (int i = highestPriorityIndex; i < size - 1; i++) {
-            data[i] = data[i + 1];
-        }
+
         size--;
-        return highestPriorityElement;
+        return result;
     }
 
     T Peek() const {
         if (IsEmpty()) {
-            throw exception("Queue is empty");
+            throw underflow_error("Queue is empty");
         }
-        int highestPriorityIndex = 0;
-        for (int i = 1; i < size; i++) {
-            if (data[i].priority > data[highestPriorityIndex].priority) {
-                highestPriorityIndex = i;
-            }
-        }
-        return data[highestPriorityIndex].data;
+        return elements[0].value;
     }
 
     int GetSize() const {
@@ -86,24 +78,21 @@ public:
 
     void Show() const {
         for (int i = 0; i < size; i++) {
-            cout << "Value: " << data[i].data << ", Priority: " << data[i].priority << endl;
+            cout << "Value: " << elements[i].value << ", Priority: " << elements[i].priority << endl;
         }
     }
 };
 
 int main() {
-    PriorityQueue<int> pq;
+    PriorityQueue<string> queue;
+    queue.InsertWithPriority("Apple", 3);
+    queue.InsertWithPriority("Banana", 1);
+    queue.InsertWithPriority("Cherry", 2);
 
-    pq.InsertWithPriority(10, 1);
-    pq.InsertWithPriority(20, 2);
-    pq.InsertWithPriority(30, 3);
-    pq.InsertWithPriority(40, 0);
+    cout << "Peek: " << queue.Peek() << endl;
+    cout << "Size: " << queue.GetSize() << endl;
+    queue.Show();
 
-    cout << "Queue elements: " << endl;
-    pq.Show();
-
-    cout << "Highest priority element: " << pq.Peek() << endl;
-    cout << "Pulling highest priority element: " << pq.PullHighestPriorityElement() << endl;
-    cout << "Queue elements after pull: " << endl;
-    pq.Show();
+    cout << "Pulled: " << queue.PullHighestPriorityElement() << endl;
+    queue.Show();
 }
