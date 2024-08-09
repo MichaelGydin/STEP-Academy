@@ -1,0 +1,33 @@
+body{
+  background-color: #f0f0f0;
+  }
+
+  .news-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .news-page .news-item {
+    margin-bottom: 30px;
+  }
+  
+  .news-page .news-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .news-page .news-item p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
