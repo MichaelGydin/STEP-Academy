@@ -4,8 +4,7 @@ import SignUpPage from './pages/auth/SignUpPage'; // Додати цей імп�
 function App() {
     return (
         <>
-            {/* Інші компоненти */}
-            <SignUpPage /> {/* Додати цей рядок */}
+            <SignUpPage />
         </>
     );
 }
