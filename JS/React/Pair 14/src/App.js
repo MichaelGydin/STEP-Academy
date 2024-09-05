@@ -1,5 +1,5 @@
 import React from 'react';
-import SignUpPage from './pages/auth/SignUpPage'; // Додати цей імпорт
+import SignUpPage from './pages/auth/SignUpPage';
 
 function App() {
     return (
