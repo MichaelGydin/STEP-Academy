@@ -1,0 +1,3 @@
+101 System started INFO
+102 User login failed ERROR
+103 Database connection established INFO
