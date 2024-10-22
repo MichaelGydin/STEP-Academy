@@ -1,0 +1,146 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.todo-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.todo-form h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 15px;
+}
+
+.todo-form .p-field {
+  margin-bottom: 15px;
+}
+
+.todo-form input, .todo-form textarea, .todo-form .p-dropdown, .todo-form .p-calendar {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+}
+
+.todo-form input:focus, .todo-form textarea:focus, .todo-form .p-dropdown:focus, .todo-form .p-calendar:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+.todo-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-form button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list {
+  margin-top: 30px;
+}
+
+.todo-list h2 {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+}
+
+.todo-item h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #343a40;
+}
+
+.todo-item p {
+  margin: 5px 0;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.todo-item p strong {
+  color: #007bff;
+}
+
+.todo-item button {
+  margin-right: 10px;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.todo-item button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.todo-item button:first-child:hover {
+  background-color: #218838;
+}
+
+.todo-item button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.todo-item button:last-child:hover {
+  background-color: #c82333;
+}
+
+.todo-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .todo-form, .todo-item {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 95%;
+  }
+
+  .todo-form button {
+      font-size: 0.9rem;
+  }
+}
